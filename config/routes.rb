@@ -1,5 +1,20 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  get 'comments/create'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'sessions/new'
+
+  get 'messages/index'
+
+  get 'messages/show'
+
+  get 'examples/index'
+
+	resource :session
+	resources :examples
+
+	resources :messages do
+		resources :comments
+	end
+
+	root 'examples#index'
 end
