@@ -17,6 +17,7 @@ gem 'coffee-rails', github: "rails/coffee-rails"
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'bootstrap-sass'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -30,8 +31,6 @@ gem 'jbuilder', '~> 2.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-# Authentication with Devise
-gem 'devise'
 # Actually I want puma for the app server because it needs to be multi-threaded
 gem 'puma'
 # Redis is an extremely fast, atomic key-value store.
